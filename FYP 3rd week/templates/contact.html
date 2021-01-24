@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ESV</title>
+{% load static %}
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Movies Pro Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/easy-responsive-tabs.css' %}" rel='stylesheet' type='text/css'/>
+<link rel="stylesheet" type="text/css" href=" {% static 'css/zoomslider.css' %}" />
+<link rel="stylesheet" type="text/css" href=" {% static 'css/style.css' %}" />
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<script type="text/javascript" src="{% static 'js/modernizr-2.6.2.min.js' %} "></script>
+
+
+<!--/web-fonts-->
+<link href='//fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
+<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<!--//web-fonts-->
+
+
+</head>
+<body>
+<!--/main-header-->
+  <!--/banner-section-->
+	<div id="demo-1" class="banner-inner">
+	 <div class="banner-inner-dott">
+		<!--/header-w3l-->
+			   
+		<!--//header-w3l-->
+		</div>
+    </div>
+  <!--/banner-section-->
+ <!--//main-header-->
+	         <!--/banner-bottom-->
+			  <div class="w3_agilits_banner_bootm">
+			     <div class="w3_agilits_inner_bottom">
+			            <div class="col-md-6 wthree_agile_login">
+						     <ul>
+								
+									<li><a href="#" class="login"  data-toggle="modal" data-target="#myModal4">Login</a></li>
+									<li><a href="#" class="login reg"  data-toggle="modal" data-target="#myModal5">Register</a></li>
+
+								</ul>
+						</div>
+						 <div class="col-md-6 wthree_share_agile">
+									
+									
+								</div>
+						</div>
+				</div>
+			</div>
+			<!--//banner-bottom-->
+		    
+				  
+						<!-- breadcrumb -->
+	<div class="w3_breadcrumb">
+		<div class="breadcrumb-inner">	
+			<ul>
+				<li><a href="index.html">Home</a><i>//</i></li>
+				<li>Contact</li>
+			</ul>
+		</div>
+	</div>
+<!-- //breadcrumb -->
+
+			<!--/content-inner-section-->
+            {% if msgname %}
+              <center>
+				  <h2> Thanks {{ msgname}}! </h2>
+				   <p>We have recived your message. we get back to you
+					   shortly
+				   </p>
+				  <br/> <br/>
+			  </center>
+    		{% else %}
+
+				<div class="w3_content_agilleinfo_inner">
+					<div class="agile_featured_movies">
+							<div class="inner-agile-w3l-part-head">
+					            <h3 class="w3l-inner-h-title">Contact   </h3>
+								<p class="w3ls_head_para">Add short Description</p>
+							</div>
+						<div class="w3_mail_grids">
+								<form action="{% url 'contact' %}" method="post">
+									{% csrf_token %}
+									<div class="col-md-6 w3_agile_mail_grid">
+										<span class="input input--ichiro">
+
+											<input class="input__field input__field--ichiro" type="text" name="message-name" placeholder=" " required="">
+											<label class="input__label input__label--ichiro" for="input-24">
+
+												<span class="input__label-content input__label-content--ichiro">Your Name</span>
+											</label>
+										</span>
+										<span class="input input--ichiro">
+											<input class="input__field input__field--ichiro" type="email" name="message-email" placeholder=" " required="">
+											<label class="input__label input__label--ichiro" for="m">
+												<span class="input__label-content input__label-content--ichiro">Your Email</span>
+											</label>
+										</span>
+										<span class="input input--ichiro">
+											<input class="input__field input__field--ichiro" type="text" name="message-phone" placeholder=" " required="">
+											<label class="input__label input__label--ichiro" for="message-phone">
+												<span class="input__label-content input__label-content--ichiro">Your Phone Number</span>
+											</label>
+										</span>
+										
+									</div>
+									<div class="col-md-6 w3_agile_mail_grid two">
+										<textarea name="message" placeholder="Your Message" required=""></textarea>
+										<input type="submit" value="Submit">
+									</div>
+									<div class="clearfix"> </div>
+								</form>
+								
+					
+					</div>
+					</div>
+							
+				</div>
+			<!--//content-inner-section-->
+            {% endif %}
+
+
+	<!--/footer-bottom-->
+		<div class="contact-w3ls" id="contact">
+			<div class="footer-w3lagile-inner">
+				<h2>Sign up for our <span>Newsletter</span></h2>
+				<p class="para">Join our Newsletter service to get weekly updates of latest movies which you can
+                    watch according to your emotions via email.</p>
+				<div class="footer-contact">
+					<form action="#" method="post">
+						<input type="email" name="Email" placeholder="Enter your email...." required=" ">
+						<input type="submit" value="Subscribe">
+					</form>
+				</div>
+					
+					
+			 </div>
+						
+			</div>
+			<div class="w3agile_footer_copy">
+				<p>© 2020 ESV. All rights reserved | Design by ESV Team</p>
+			</div>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+	<!-- Dropdown-Menu-JavaScript -->
+			<script>
+				$(document).ready(function(){
+					$(".dropdown").hover(            
+						function() {
+							$('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+							$(this).toggleClass('open');        
+						},
+						function() {
+							$('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+							$(this).toggleClass('open');       
+						}
+					);
+				});
+			</script>
+		<!-- //Dropdown-Menu-JavaScript -->
+		<!-- search-jQuery -->
+				<script src="js/main.js"></script>
+			<!-- //search-jQuery -->
+			
+
+<!--/script-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+ <script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+<!--end-smooth-scrolling-->
+	<script src="js/bootstrap.js"></script>
+
+ 
+
+</body>
+</html>
