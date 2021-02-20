@@ -57,3 +57,9 @@ This project is ongoing.
 
 ## Issues/Problems
 User interface design might look different on different we browser.
+
+## Contributors
+
+* **Maryyam Ahsan**
+* **Mariam Bibi**
+* **Wardah Shafi**
